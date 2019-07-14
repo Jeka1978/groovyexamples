@@ -6,7 +6,19 @@ import demo.Person
  * @author Evgeny Borisov
  */
 class PersonUtil {
-    void printStreetName(Map<Integer,Person> map,int key){
+   static void printStreetName(Map<Integer,Citizen> map,int key){
 
-    }
+      println map[key]?.homeAddress?.streetName
+
+
+//       def citizen = map[key]
+//       if (citizen != null) {
+//           def address = citizen.homeAddress
+//           if (address != null) {
+//               def streetName = address.streetName
+//               println(streetName)
+//           }
+//       }
+
+   }
 }

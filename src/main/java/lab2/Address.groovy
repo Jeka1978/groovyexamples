@@ -7,5 +7,5 @@ import groovy.transform.Canonical
  */
 @Canonical
 class Address {
-    private String streetName
+    String streetName
 }

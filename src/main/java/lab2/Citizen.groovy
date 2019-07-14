@@ -7,5 +7,16 @@ import groovy.transform.Canonical
  */
 @Canonical
 class Citizen {
-    private Address homeAddress
+    Address homeAddress
+    int age
+
+    void setAge(int age) {
+        println('check if age is valid')
+        this.age = age
+    }
+
+    int getAge() {
+        println('security check')
+        return age
+    }
 }
