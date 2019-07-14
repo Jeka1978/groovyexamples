@@ -12,6 +12,9 @@ class Person  {
     int age
     int salary
 
+    boolean isCase(Person person) {
+        return person.age==this.age
+    }
     boolean asBoolean() {
 
 
